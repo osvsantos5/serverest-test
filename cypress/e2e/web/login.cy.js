@@ -8,7 +8,7 @@ describe('Funcionalidade: Login', () => {
     });
 
     it('Deve fazer login com sucesso Usuário Comun', () => {
-        cy.login('OsvaldoSantos1716561245454@teste.com','teste@123')
+        cy.login('fabio1716903162421@teste.com','teste@123')
         cy.get('h1').should('contain' , 'Serverest Store')
         //cy.get('.lead').should('contain' , 'Este é seu sistema para administrar seu ecommerce.')
     });
