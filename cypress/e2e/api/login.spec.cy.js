@@ -6,7 +6,7 @@ describe('API Login Test', () => {
       method: 'POST',
       url: `https://serverest.dev/login`, // Usando baseUrlBack definido no cypress.config.js
       body: {
-        email: 'fulanodasilva@qa.com',
+        email: 'beltrano@qua.com.br',
         password: 'teste'
       }
     }).then((response) => {

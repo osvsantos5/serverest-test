@@ -7,7 +7,7 @@ describe('Funcionalidade: Lista de compras', () => {
   beforeEach(() => {
 
     loginPage.visitarUrl()
-    loginPage.LoginUsuario('OsvaldoSantos1716561245454@teste.com','teste@123')
+    loginPage.LoginUsuario('Vicenta_Armstrong@marquis.com','12345')
     cy.get('h1',{timeout: 10000}).should('contain', 'Serverest')
   });
 

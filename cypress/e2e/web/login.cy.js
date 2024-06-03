@@ -8,7 +8,7 @@ describe('Funcionalidade: Login', () => {
     });
 
     it('Deve fazer login com sucesso Usuário Comun', () => {
-        cy.login('fabio1716903162421@teste.com','teste@123')
+        cy.login('teste@teste.com','12345')
         cy.get('h1').should('contain' , 'Serverest Store')
         //cy.get('.lead').should('contain' , 'Este é seu sistema para administrar seu ecommerce.')
     });
@@ -26,7 +26,7 @@ describe('Funcionalidade: Login', () => {
 
     it('Deve fazer login Usuário Adm com sucesso usando fixture', () => {
         // login feito usando fixture, olhar o json na pasta cypress/fixtures
-        cy.fixture('login').then((dadosLogin) =>{
+        cy.fixture('loginAdm').then((dadosLogin) =>{
             cy.login(dadosLogin.email, dadosLogin.senha)
         })
         cy.get('h1').should('contain' , 'Bem Vindo')
